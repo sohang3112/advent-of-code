@@ -33,5 +33,5 @@ pyperclip.copy(' '.join(['(' + foo(*args) + ')' for line in Path('2021/day2-inpu
 **APL:**
 ```
 A ← ↑Input
-+/A[;2]×(1 0j¯1 0j1)[('forward' 'up' 'down')⍳A[;1]]
+×/9 11○+/A[;2]×(1 0j¯1 0j1)[('forward' 'up' 'down')⍳A[;1]]     ⍝ Part 1
 ```
