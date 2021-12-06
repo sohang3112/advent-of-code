@@ -25,7 +25,7 @@
 import pyperclip
 def foo(a,b):
      return repr(a) + ' ' + b
-pyperclip.copy(' '.join([foo(*(line.split())) for line in Path('2021/day2-input.txt').open() if line]))
+pyperclip.copy(' '.join(['(' + foo(*args) + ')' for line in Path('2021/day2-input.txt').open() if len(args := line.split()) >= 2])]))
 ```
 
 **APL:**
