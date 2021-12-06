@@ -19,7 +19,9 @@
 ```
 
 ## Day 2
-**Bash:** `awk 'BEGIN {ORS=" "} NF {print "(\x27" $1 "\x27 " $2 ")"}' day2-input.txt | xclip -selection clipboard`
+**Bash:** 
+```awk 'BEGIN {ORS=" "} NF {print "(\x27" $1 "\x27 " $2 ")"}' day2-input.txt | xclip -selection clipboard```
+
 **Python way to do the same thing:** 
 ```
 import pyperclip
