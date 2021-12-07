@@ -35,3 +35,12 @@ pyperclip.copy(' '.join(['(' + foo(*args) + ')' for line in Path('2021/day2-inpu
 A ← ↑Input
 ×/9 11○+/A[;2]×(1 0j¯1 0j1)[('forward' 'up' 'down')⍳A[;1]]     ⍝ Part 1
 ```
+
+## Day 7
+**Bash:** `cat day7-input.txt | tr ',' ' ' | xclip -selection clipboard`
+
+**APL:**
+```
+⌊/+/|∘.-⍨Input               ⍝ Part 1
+⌊/2+.÷⍨⊥∘1 1 0¨|∘.-⍨Input    ⍝ Part 2
+```
