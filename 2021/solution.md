@@ -3,7 +3,7 @@
 
 **Note:** 
 - Each Day uses seperate input. 
-- First the input is copied to a text file name *day{number}-input.txt}* where *{number}* is the current day number.
+- First the input is copied to a text file name *day{number}-input.txt* where *{number}* is the current day number.
 - The input is pre-processed into an array by a bash script and copied to system clipboard.
 - In APL, the pre-processed input array is used by writing: `Input ← {copied}` where *{copied}* is the 
   pre-processed array that was previously copied to clipboard by bash.
