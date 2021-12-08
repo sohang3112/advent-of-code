@@ -44,3 +44,13 @@ A ← ↑Input
 ⌊/+/|∘.-⍨Input               ⍝ Part 1
 ⌊/2+.÷⍨⊥∘1 1 0¨|∘.-⍨Input    ⍝ Part 2
 ```
+
+## Day 8
+**Bash:**
+```
+# copy input to clipboard
+cut -d ' ' -f 1-10  day8-input.txt |  sed 's/^/(/;s/\b/\'/g;s/$/)/' | head -n -1 | tr '\n' ' ' | xclip -selection clipboard
+
+# copy output to clipboard
+cut -d ' ' -f 12-15 day8-input.txt |  sed 's/^/(/;s/\b/\'/g;s/$/)/' | head -n -1 | tr '\n' ' ' | xclip -selection clipboard
+```
