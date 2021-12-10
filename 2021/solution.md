@@ -54,3 +54,6 @@ cut -d ' ' -f 1-10  day8-input.txt |  sed 's/^/(/;s/\b/\'/g;s/$/)/' | head -n -1
 # copy output to clipboard
 cut -d ' ' -f 12-15 day8-input.txt |  sed 's/^/(/;s/\b/\'/g;s/$/)/' | head -n -1 | tr '\n' ' ' | xclip -selection clipboard
 ```
+
+## Day 10
+**Bash:** `sed "s/^/'/;s/\$/'/" day10-input.txt | head -n -1 | tr '\n' ' ' | xclip -selection clipboard`
